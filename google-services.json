@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "565004186080",
+    "firebase_url": "https://geetika-bhawan-default-rtdb.firebaseio.com",
+    "project_id": "geetika-bhawan",
+    "storage_bucket": "geetika-bhawan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565004186080:android:e451af8a03d562ef443b85",
+        "android_client_info": {
+          "package_name": "com.myapp.geetikabhawan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "565004186080-p6lmondht5hbaqldegl3shgg34fqm17q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_j-Ek9OCRDLzMPHsPvoFx6n609yb-6as"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "565004186080-p6lmondht5hbaqldegl3shgg34fqm17q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565004186080:android:583839fb38bb42a9443b85",
+        "android_client_info": {
+          "package_name": "com.myapp.geetikabhawanadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "565004186080-p6lmondht5hbaqldegl3shgg34fqm17q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_j-Ek9OCRDLzMPHsPvoFx6n609yb-6as"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "565004186080-p6lmondht5hbaqldegl3shgg34fqm17q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

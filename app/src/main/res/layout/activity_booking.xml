@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".bookings.BookingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/alegreya_bold_italic"
+            android:gravity="center"
+            android:text="Select Date from Calender"
+            android:textColor="#EEF3EB"
+            android:textSize="25sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFF"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/datePicker"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:onClick="datePicker"
+            android:background="@drawable/outline_box">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alegreya_italic"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:gravity="center"
+                android:id="@+id/dateTextView"
+                android:text="--Tap to Select--"
+                android:textColor="#EEF3EB"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check Availability"
+                android:id="@+id/memberUpdate"
+                android:textColor="#FFFFFF"
+                android:onClick="checkAvailability"
+                android:fontFamily="@font/alegreya_italic"
+                android:textStyle="bold"
+                android:layout_marginVertical="4dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFF"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/alegreya_bold_italic"
+            android:gravity="center"
+            android:text="Provide Personal Details for Booking"
+            android:textColor="#EEF3EB"
+            android:textSize="25sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFF"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/avatar_image"
+                android:onClick="addCustomerImage"
+                android:layout_gravity="center"
+                android:id="@+id/addCustomerImage"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Your Image from Gallery by tapping on Avatar"
+                android:textAlignment="center"
+                android:textColor="#100F0F"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/alegreya_italic"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#E82CDBF1">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/addCustomerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/alegreya_italic"
+                        android:textStyle="bold"
+                        android:inputType="text"
+                        android:hint="Name" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:background="#E82CDBF1">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/addCustomerMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/alegreya_italic"
+                        android:textStyle="bold"
+                        android:inputType="number"
+                        android:hint="Mobile" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginVertical="16dp"
+                android:background="@drawable/outline_box">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bookingCategory"
+                    android:spinnerMode="dropdown"
+                    android:fontFamily="@font/alegreya_italic"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#DA2E2828"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Before proceeding, please note following Terms and Conditions :"
+                android:textAlignment="center"
+                android:textColor="#100F0F"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/alegreya_italic"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFF"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_label"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The Initial booking amount of Geetika Bhawan is Rs.5000"
+                        android:textColor="#100F0F"
+                        android:textSize="18sp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="7dp"
+                        android:fontFamily="@font/alegreya_italic"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_label"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The Initial deposited amount (i.e 5K) is adjusted with total payment."
+                        android:textColor="#100F0F"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="7dp"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/alegreya_italic"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_label"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Confirmation booking amount is non-refundable."
+                        android:textColor="#100F0F"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="7dp"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/alegreya_italic"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/checkoutBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/alegreya_italic"
+                android:onClick="proceedToCheckout"
+                android:text="Proceed To Checkout"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.core.widget.NestedScrollView>

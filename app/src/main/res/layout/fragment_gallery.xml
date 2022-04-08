@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginVertical="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alegreya_bold_italic"
+                    android:gravity="center"
+                    android:text="Wedding"
+                    android:textColor="#0A0B0B"
+                    android:textSize="30sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#c1c1c1"
+                    android:layout_marginVertical="8dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/weddingRecyclerView"/>
+
+            </LinearLayout>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shimmerWedding">
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="52dp"
+                    android:columnCount="4">
+
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+
+                </GridLayout>
+
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginVertical="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alegreya_bold_italic"
+                    android:gravity="center"
+                    android:text="Reception"
+                    android:textColor="#0A0B0B"
+                    android:textSize="30sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#c1c1c1"
+                    android:layout_marginVertical="8dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/receptionRecyclerView"/>
+            </LinearLayout>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shimmerReception">
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="52dp"
+                    android:columnCount="4">
+
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+
+                </GridLayout>
+
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginVertical="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alegreya_bold_italic"
+                    android:gravity="center"
+                    android:text="Party"
+                    android:textColor="#0A0B0B"
+                    android:textSize="30sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#c1c1c1"
+                    android:layout_marginVertical="8dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/partyRecyclerView"/>
+            </LinearLayout>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shimmerParty">
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="52dp"
+                    android:columnCount="4">
+
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+
+                </GridLayout>
+
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginVertical="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alegreya_bold_italic"
+                    android:gravity="center"
+                    android:text="Event"
+                    android:textColor="#0A0B0B"
+                    android:textSize="30sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#c1c1c1"
+                    android:layout_marginVertical="8dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eventRecyclerView"/>
+            </LinearLayout>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shimmerEvent">
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="52dp"
+                    android:columnCount="4">
+
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+                    <include layout="@layout/shimmer_for_gallery"/>
+
+                </GridLayout>
+
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

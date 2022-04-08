@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".AuthenticationActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/alegreya_bold_italic"
+            android:text="AUTHENTICATE YOURSELF"
+            android:textAlignment="center"
+            android:textColor="#EEF3EB"
+            android:textSize="40sp" />
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/app_icon" />
+
+        <com.google.android.gms.common.SignInButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signInBtn"
+            android:layout_marginTop="40dp"
+            app:buttonSize="wide"
+            app:colorScheme="dark"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/alegreya_italic"
+            android:text="Signup/Login from Google with One Tap"
+            android:textAlignment="center"
+            android:textColor="#050505"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_label"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="2dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alegreya_italic"
+                    android:text="Note : "
+                    android:textAlignment="center"
+                    android:textColor="#050505"
+                    android:textStyle="bold"
+                    android:textSize="24sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#050505" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alegreya_italic"
+                android:text="If you are a new user and don't have Google Account yet then please choose 'ADD ANOTHER ACCOUNT' option after tapping on the above button for creating a new Google Account."
+                android:textColor="#050505"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

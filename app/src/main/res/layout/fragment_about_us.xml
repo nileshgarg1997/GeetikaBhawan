@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".ui.aboutus.AboutUsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/alegreya_bold_italic"
+            android:text="OUR STORY"
+            android:textAlignment="center"
+            android:textColor="#EEF3EB"
+            android:textSize="25sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFF"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/alegreya_italic"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp"
+            android:text="Geetika the Symbol of Excellence - A 40 Years old organization famous by its quality, effective and efficient service delivery. Geetika Bhawan is not only the venue with all facilities of your event, this is the one roof solution for your event."
+            android:textColor="#EEF3EB"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/alegreya_italic"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp"
+            android:text="Geetika Bhawan is the sister concern and the 'Best in Class' event venue of Geetika - The oldest, renowned and famous for event decoration planner and service provider organization. A 40 Years old organization always makes a unique standard by its quality driven approach."
+            android:textColor="#EEF3EB"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/alegreya_italic"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp"
+            android:text="Not like other organizations, Geetika being an oldest and renown organization, still improving its quality of service to provide, an unique not only good but excellent experience, to its esteemed customer.Geetika Bhawan is not only the venue with all facilities of your event, this is the one roof solution for your event."
+            android:textColor="#EEF3EB"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/geetika_bhawan_image"
+            android:id="@+id/aboutUsImage"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFF"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/alegreya_bold_italic"
+            android:text="WHY US"
+            android:textAlignment="center"
+            android:textColor="#EEF3EB"
+            android:textSize="25sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFF"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/alegreya_italic"
+                    android:padding="5dp"
+                    android:text="EXCLUSIVE DESIGN"
+                    android:textSize="20sp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#EEF3EB"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/alegreya_italic"
+                    android:padding="5dp"
+                    android:text="CLIENT FOCUSED"
+                    android:textSize="20sp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#EEF3EB"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/alegreya_italic"
+                    android:padding="5dp"
+                    android:text="FLEXI PRICING"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#EEF3EB"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon4"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/alegreya_italic"
+                    android:padding="5dp"
+                    android:text="QUALITY DRIVEN"
+                    android:textSize="20sp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#EEF3EB"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon5"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/alegreya_italic"
+                    android:padding="5dp"
+                    android:text="24*7 POWER BACKUP"
+                    android:textSize="20sp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#EEF3EB"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon6"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/alegreya_italic"
+                    android:padding="5dp"
+                    android:text="INDUSTRY LEADER"
+                    android:textSize="20sp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#EEF3EB"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFF"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/alegreya_bold_italic"
+            android:text="FEEL FREE TO CONTACT US"
+            android:textAlignment="center"
+            android:textColor="#EEF3EB"
+            android:textSize="25sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFF"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/alegreya_italic"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:text="Geetika Bhawan"
+                android:textAllCaps="true"
+                android:layout_marginTop="16dp"
+                android:textColor="#EEF3EB"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/alegreya_italic"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:text="Anand Para Rd, Municipal Market,
+                Jalpaiguri,West Bengal"
+                android:textColor="#EEF3EB"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/alegreya_italic"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:text="Pin Code: 735101"
+                android:textColor="#EEF3EB"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/alegreya_italic"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:text="Email: booking@geetika.in"
+                android:textColor="#EEF3EB"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/alegreya_italic"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:text="Phone No: +91-8167736930"
+                android:textColor="#EEF3EB"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFF"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

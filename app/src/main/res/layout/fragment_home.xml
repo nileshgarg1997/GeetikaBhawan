@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_image">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_bold_italic"
+                android:text="Welcome to GEETIKA BHAWAN                  A “Best in Class” Venue for Your Dream Event “We make your dream event come True…….”"
+                android:textAlignment="center"
+                android:textColor="#EEF3EB"
+                android:textSize="25sp" />
+
+            <com.smarteist.autoimageslider.SliderLayout
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_italic"
+                android:text="Geetika Bhawan is the sister concern and the “Best in Class” event venue of Geetika — The oldest, renowned and famous for event decoration planner and service provider organization.
+A 40 Years old organization always makes a unique standard by its quality driven approach…."
+                android:textColor="#FFFF"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Geetika Bhawan is not only the venue with all facilities of your event, this is the one roof solution for your event.We request our esteemed customer to share their dream about their event only, We the Geetika Family makes it true by our quality driven and highly experienced approach."
+                android:textSize="20sp"
+                android:textColor="#FFFF"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:fontFamily="@font/alegreya_italic"
+                android:layout_marginTop="30dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFF"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/alegreya_bold_italic"
+                        android:text="OUR PACKAGES"
+                        android:textColor="#FFFF"
+                        android:textSize="25sp" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/gradient"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/maharajaBtn"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginHorizontal="@dimen/text_size"
+                                    android:layout_marginTop="@dimen/text_margin"
+                                    android:fontFamily="@font/alegreya_italic"
+                                    android:text="Maharaja"
+                                    android:textColor="#FFFF"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"/>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#FFFF" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/budgetBtn"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginHorizontal="@dimen/text_size"
+                                android:layout_marginTop="@dimen/text_margin"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/alegreya_italic"
+                                android:text="Budget"
+                                android:textColor="#FFFF"
+                                android:textSize="20sp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#FFFF" />
+                        </LinearLayout>
+
+                            <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/customizeBtn"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginHorizontal="@dimen/text_size"
+                                android:layout_marginTop="@dimen/text_margin"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/alegreya_italic"
+                                android:text="Customize"
+                                android:textColor="#FFFF"
+                                android:textSize="20sp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#FFFF" />
+
+                        </LinearLayout>
+
+                            <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sumptuousBtn"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginHorizontal="@dimen/text_size"
+                                android:layout_marginTop="@dimen/text_margin"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/alegreya_italic"
+                                android:text="Sumptuous"
+                                android:textColor="#FFFF"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/alegreya_bold_italic"
+                    android:text="MAP VIEW"
+                    android:textColor="#FFFF"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:id="@+id/map"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/map_image"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
