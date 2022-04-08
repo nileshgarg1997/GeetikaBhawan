@@ -235,7 +235,7 @@ public class BookingActivity extends AppCompatActivity implements PaymentResultL
     private void makePayment() {
 
         Checkout checkout = new Checkout();
-        checkout.setKeyID("rzp_live_wxDRGXH6b5ODbe");
+        checkout.setKeyID("xxxxxxxxxxxxxxxxx");
 
         /**
          * Set your logo here
